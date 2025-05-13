@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS styles for the admin dashboard */
+.admin-dashboard-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.admin-dashboard-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.admin-dashboard-item {
+  margin-bottom: 20px;
+}
+
+.admin-dashboard-item label {
+  display: block;
+  font-weight: bold;
+}
+
+.admin-dashboard-item input[type="text"],
+.admin-dashboard-item textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.admin-dashboard-item button {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.admin-dashboard-item button:hover {
+  background-color: #45a049;
+}
+
+.sidebar {
+  float: left;
+  width: 20%;
+  background-color: #f1f1f1;
+  padding: 15px;
+  height: 100vh;
+  overflow-y: auto;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 250px;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.content {
+  float: left;
+  width: 80%;
+  padding: 15px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #eeee;
+  display: none;
+  overflow: hidden;
+}
+
+.panel p {
+  padding: 10px;
+}
+
+.logout {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logout button {
+  padding: 8px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.logout button:hover {
+  background-color: #d32f2f;
+}
+
+.crud-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.crud-container h2 {
+  margin-bottom: 20px;
+}
+
+.category-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-list li {
+  margin-bottom: 10px;
+}
+
+.category-actions {
+  margin-top: 20px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #0056b3;
+  transform: translateY(1px);
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 3px;
+  background-color: #eeee;
+  color: #444;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sidebar li a:hover {
+  background-color: #ccc;
+}
+
+/* CSS styles for the payments UI */
+.payments-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.payment-info {
+  flex: 1;
+}
+
+.payment-status {
+  flex: 0 0 150px;
+  text-align: right;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .payments-container {
+    padding: 10px;
+  }
+
+  .payment-item {
+    flex-direction: column;
+  }
+
+  .payment-status {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+#paymentTable {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#paymentTable th,
+#paymentTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#paymentTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#paymentTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#paymentTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+#paymentTable td button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#paymentTable td button:hover {
+  background-color: #c82333;
+}
