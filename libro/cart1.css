@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+}
+
+/*h1 {
+    text-align: center;
+    color: #333;
+}*/
+
+.cart-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;  
+    text-align: center; 
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+/*img {
+    max-width: 80px;
+    border-radius: 5px;
+}*/
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-update {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-remove {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-checkout {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+}
